@@ -45,9 +45,8 @@ export const words = {
     errorPayCode: "Неверный код! Пожалуйста уточните у официанта.",
     finishText: "Спасибо! Ждем Вас вновь!",
     inputPayCodeText: "Сейчас к вам придет официант. После оплаты пожалуйста введите код оплаты. Официант вам его сообщит.",
-    textMessage: "💵 Оплата заказа!\n\nРодной язык посетителя - ${userLang}\n🍽️ Стол № ${tableNumber}\n💶💳 Способ оплаты - ${paymentMethod}\n#️⃣ Номер закза -\n${orderId}\n\n📃 Вот чек:\n ${orderListText}\n💰 Итого: ${totalCostMessage} ${currencySymbol}\n\n Код - Успешная оплата: ${sectetPayCode}",
-
-
+    textMessage: "💵 Оплата заказа!\n\nРодной язык посетителя - ${userLang}\n🍽️ Стол № ${tableNumber}\n💶💳 Способ оплаты - ${paymentMethod}\n#️⃣ Номер закза -\n${orderId}\n\n📃 Вот чек:\n ${orderListText}\n💰 Итого: ${totalCostMessage}\n\n🔢 Код - Успешная оплата: ${sectetPayCode}",
+    textMessageOrderPaid: "💸❌ Заказ оплачен!\n#️⃣ Номер заказа -\n${orderId}\n💰 Итого: ${totalCostMessage}"
   },
   
   en: {
@@ -96,7 +95,8 @@ export const words = {
     errorPayCode: "Invalid code! Please check with the waiter.",
     finishText: "Thank you! We look forward to seeing you again!",
     inputPayCodeText: "The waiter will be with you shortly. After making the payment, please enter the payment code that they will provide.",
-    textMessage: "💵 Order payment!\n\nVisitor's native language - ${userLang}\n🍽️ Table № ${tableNumber}\n💶💳 Payment method - ${paymentMethod}\n#️⃣ Order number -\n${orderId}\n\n📃 Here is the receipt:\n ${orderListText}\n💰 Total: ${totalCostMessage} ${currencySymbol}\n\n Payment Success Code: ${sectetPayCode}"
+    textMessage: "💵 Order payment!\n\nVisitor's native language - ${userLang}\n🍽️ Table № ${tableNumber}\n💶💳 Payment method - ${paymentMethod}\n#️⃣ Order number -\n${orderId}\n\n📃 Here is the receipt:\n ${orderListText}\n💰 Total: ${totalCostMessage}\n\n🔢 Payment Success Code: ${sectetPayCode}",
+    textMessageOrderPaid: "💸❌ Order paid!\n#️⃣ Order number -\n${orderId}\n💰 Total: ${totalCostMessage}",
   },
 
   tr: {
@@ -145,7 +145,8 @@ export const words = {
     errorPayCode: "Geçersiz kod! Lütfen garsona danışın.",
     finishText: "Teşekkür ederiz! Sizi tekrar görmek için sabırsızlanıyoruz!",
     inputPayCodeText: "Garson kısa süre içinde yanınıza gelecektir. Ödemeyi yaptıktan sonra, size verilen ödeme kodunu giriniz.",
-    textMessage: "💵 Sipariş Ödemesi!\n\nZiyaretçinin ana dili - ${userLang}\n🍽️ Masa № ${tableNumber}\n💶💳 Ödeme yöntemi - ${paymentMethod}\n#️⃣ Sipariş numarası -\n${orderId}\n\n📃 İşte fişiniz:\n ${orderListText}\n💰 Toplam: ${totalCostMessage} ${currencySymbol}\n\n Ödeme Başarı Kodu: ${sectetPayCode}",
+    textMessage: "💵 Sipariş Ödemesi!\n\nZiyaretçinin ana dili - ${userLang}\n🍽️ Masa № ${tableNumber}\n💶💳 Ödeme yöntemi - ${paymentMethod}\n#️⃣ Sipariş numarası -\n${orderId}\n\n📃 İşte fişiniz:\n ${orderListText}\n💰 Toplam: ${totalCostMessage}\n\n🔢 Ödeme Başarı Kodu: ${sectetPayCode}",
+    textMessageOrderPaid: "💸❌ Sipariş ödendi\n#️⃣ Sipariş numarası -\n${orderId}\n💰 Toplam: ${totalCostMessage}"
   },
 
   de: {
@@ -194,7 +195,9 @@ export const words = {
     errorPayCode: "Ungültiger Code! Bitte fragen Sie die Bedienung.",
     finishText: "Vielen Dank! Wir freuen uns auf Ihren nächsten Besuch!",
     inputPayCodeText: "Die Bedienung wird in Kürze bei Ihnen sein. Nach der Zahlung geben Sie bitte den Zahlungs-Code ein, den Sie erhalten haben.",
-    textMessage: "💵 Bestellzahlung!\n\nMuttersprache des Besuchers - ${userLang}\n🍽️ Tisch Nr. ${tableNumber}\n💶💳 Zahlungsmethode - ${paymentMethod}\n#️⃣ Bestellnummer -\n${orderId}\n\n📃 Hier ist Ihre Quittung:\n ${orderListText}\n💰 Gesamt: ${totalCostMessage} ${currencySymbol}\n\n Zahlungserfolgs-Code: ${sectetPayCode}",
+    textMessage: "💵 Bestellzahlung!\n\nMuttersprache des Besuchers - ${userLang}\n🍽️ Tisch Nr. ${tableNumber}\n💶💳 Zahlungsmethode - ${paymentMethod}\n#️⃣ Bestellnummer -\n${orderId}\n\n📃 Hier ist Ihre Quittung:\n ${orderListText}\n💰 Gesamt: ${totalCostMessage} ${currencySymbol}\n\n🔢 Zahlungserfolgs-Code: ${sectetPayCode}",
+    textMessageOrderPaid: "💸❌ Bestellung bezahlt!\n#️⃣ Bestellnummer -\n${orderId}\n💰 Gesamt: ${totalCostMessage}"
+
   },
 
 }

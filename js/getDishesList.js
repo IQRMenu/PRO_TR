@@ -28,7 +28,7 @@ function processData(data) {
     let obj = {};
     row.forEach((value, index) => {
       obj[keys[index]] = value;
-    });   
+    });    
     return obj;
   });
   return objectsArray;

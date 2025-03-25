@@ -1,8 +1,13 @@
 export let globalData = {
   cafeName: 'MenuProTurkey',
   sheetId: '1rquPs2dI-Z_TGAeNCnWSyqHlqEswyywWZaA7RCsFUoo',
-  mainLang: 'tr',
+  mainLang: 'ru',
   currencySymbol: '₺',
+  moreCurrencieslist: [
+    { name: 'main', symbol: '₺' },
+    { name: 'dollar', symbol: '$' },
+    { name: 'euro', symbol: '€' }
+  ],
   googleLink: 'https://maps.app.goo.gl/JN7ToTsjgCQW9FtY8',
   version: 'pro',//pro o basik
 
