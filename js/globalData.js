@@ -1,7 +1,7 @@
 export let globalData = {
   cafeName: 'MenuProTurkey',
   sheetId: '1rquPs2dI-Z_TGAeNCnWSyqHlqEswyywWZaA7RCsFUoo',
-  mainLang: 'ru',
+  mainLang: 'tr',
   currencySymbol: '₺',
   moreCurrencieslist: [
     { name: 'main', symbol: '₺' },
