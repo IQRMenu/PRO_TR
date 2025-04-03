@@ -423,6 +423,28 @@ button.basket-clouse_active {
   border-bottom: 1px solid var(--color1);
 }
 
+.dishes-cart__button_play{
+  display: none;
+}
+.card_imgGif .dishes-cart__button_play{
+  display: block;
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  background: none;
+  color: var(--color2);
+  background-color: var(--color3);
+  border: none;
+  font-size: 50px;
+  line-height: 100%;
+  border-radius: 100%;
+}
+.dishes-cart__button_play.display_none{
+  display: none;
+}
+
 .dishes-card__info {
   padding: 0 15px 0 15px;
   display: flex;
@@ -477,6 +499,15 @@ button.basket-clouse_active {
 
 .portion-item__text span {
   font-size: 16px;
+}
+.portion-name{
+  background-color: var(--color3);
+  border-radius: 5px;
+  padding: 0 4px;
+}
+.dishes-card_active .portion-name{
+  background-color: var(--color2);
+  color: var(--color1);
 }
 .portion-item__text .portion-cost{
   font-size: 20px;
@@ -537,6 +568,23 @@ button.basket-clouse_active {
   gap: 10px;
   padding-bottom: 40px;
 }
+.basket-box__clue{
+  color: var(--color1);
+  text-align: center;
+}
+.basket-box__clue._display_none{
+  display: none;
+}
+.basket-box__clue i{
+  font-size: 20px;
+  color: var(--color3);
+  animation: arrowDown 1s infinite alternate ease-in-out;
+}
+@keyframes arrowDown {
+  100%{
+    transform: translateY(10px);
+  }
+}
 
 .basket-box>h3 {
   font-size: 24px;
@@ -590,8 +638,8 @@ button.basket-clouse_active {
 }
 
 .basket-item img {
-  width: 150px;
-  height: 100px;
+  width: 100px;
+  height: 70px;
   border-radius: 10px;
   object-fit: cover;
   object-position: center;
@@ -834,10 +882,10 @@ footer a {
   opacity: 0;
   visibility: hidden;
   position: fixed;
-  width: 100vw;
-  height: 100dvh;
-  top: 0;
-  left: 0;
+  width: calc(100vw - 32px);
+  height: calc(100dvh - 32px);
+  top: 16px;
+  left: 16px;
   background-color: var(--color2);
   padding: 5vh 20px 50px;
   z-index: 100;
@@ -848,6 +896,8 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 16px var(--color3);
 }
 
 .order-box._show {
@@ -856,11 +906,11 @@ footer a {
 }
 
 #orderBoxClouse {
-  position: fixed;
+  position: absolute;
   top: 10px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
   border: 3px solid var(--color1);
   border-radius: 100%;
   display: block;
@@ -882,9 +932,8 @@ footer a {
   color: var(--color2);
   font-size: 16px;
   background-color: var(--color1);
-  padding: 8px 0;
   text-align: center;
-  width: 100vw;
+  width: calc(100vw - 32px);
   transform: translateX(-20px);
   position: sticky;
 }
