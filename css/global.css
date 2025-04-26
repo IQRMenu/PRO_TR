@@ -5,10 +5,13 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-family: "Nunito", sans-serif;
+
 }
 button{
   cursor: pointer;
   transition: 0.4s;
+  border: none;
+  position: relative;
 }
 button:active{
   transition: 0.05s;
@@ -17,8 +20,9 @@ button:active{
 
 body {
   --color1: #f7f7f7;
-  --color2: #1d1717;
-  --color3: #91501b;
+  --color2: #161313;
+  --color3: #CA1417;
+  --color4: #460708;
 
   font-family: "Nunito", sans-serif;
 
@@ -27,7 +31,9 @@ body {
   background-position: center center;
   background-size: cover;
   overflow-x: hidden;
+  background-attachment: fixed;
 }
+
 
 body::-webkit-scrollbar{
   width: 4px;

@@ -1,207 +1,249 @@
 export const words = {
   ru: {
-    loaderText: 'Загружаем меню. <br> Пожалуйста подождите.',
-    appError: 'Простите приложение временно недоступно. Пожалуйста обратитесь к официантку.',
-    discountButtonText: 'Предложение дня',
-    visitorNnativeLanguage: "Родной язык посетителя - ",
-    portion: "порция",
-    cost: "стоимость",
-    pieces: "штуки",
+    flag: `🇷🇺`,
+    // head
+    ogTitle: `Пример версии Pro`,
+    ogDescription: `Премьер интерактивного меню Pro версия`,
+    title: `IQRMenu/RU`,
 
-    totalCost: "Стоимость блюд в корзине: <br>",
-    yourOrderTitle: "Ваш заказ",
-    sendOrder: "Отправить заказ",
-    updateOrder: "Добавить к заказу",
+    // body
+    loaderText: `Загружаем меню...`,
+    orderBoxTotalCostText: `Общая стоимость <b>заказа</b>:`,
+    buttonShowOrderList: `Посмотреть заказ <span class="span-number" id="orderLengthNumber"></span>`,
+    buttonPayOrder: `Оплатить заказ`,
+    cartListTotalCostText: `Общая стоимость блюд в <b>карзине</b>:`,
+    buttonSendOrder: `Отправить заказ`,
+    buttonSendAddOrder: `Добавить к закау`,
+    ordersHistoryButtonText: `История заказов`,
+    orderCheckTitleText: `Ваш заказ:`,
+    orderCheckTotalCostText: `Оплатить заказ`,
+    orderHistoryTitleText: `Ваши прошлые заказы`,
 
-    yourCart: "Корзина:",
-    basketBoxClue: 'Оплатить заказ можно здесь <i class="fa-solid fa-turn-down"></i>',
-    announcement: "",
-    announcementText: "Выберите желаемые блюда, затем пригласите официанта и покажите ему корзину.",
-    googleFedback: "Оставьте отзыв",
-    deletePortionMessage: "Удалить порцию?",
+    categoryButtonDiscountText: 'Предложение дня',
+    menuCardButtonPlay: 'видео',
 
-    textSendOrder: "Заказ успешно отправлен!",
-    textErrorSendOrder: "Ошибка при отправке заказа. Пожалуйста, попробуйте ещё раз или пригласите официанта.",
-    textAskTableNumber: "Пожалуйста, введите номер стола. Его можно увидеть на QR-коде, который находится на вашем столе.",
-    totalCostOrder: "Стоимость заказа: ",
-    yourOrderButton: "Ваш заказ<br>№",
-    payOrderButton: "Оплатить",
+    // сообщения
+    messageTitleNewOrder: `🔴 <b>Новый заказ!</b>`,
+    messageTitleAddOrder: `🟡 <b>Обновление заказа</b>`,
+    messageTitlePay: `🟢 <b>Оплата заказа</b>`,
 
-    tableNumber: "🍽️ Стол № ",
-    orderNumber: "#️⃣ Номер заказа",
-    newOrderMessage: "‼️🔴 Новый заказ!\n",
-    updateOrderMessage: "‼️🟢 Обновление заказа\n",
-    oldDishes: "🟨 Прошлые блюда:",
-    newDishes: "🟩 Новые блюда:",
-    listDishes: "📃 Список блюд:",
+    messageHeadUserLang: `🗣 <b>Родной язык посетителя –</b>`,
+    messageHeadUserTableNumber: `🍽️ <b>Стол № –</b>`,
+    messageHeadUserOrderNumber: `#️⃣ <b>Номер заказа ↴</b>`,
+    messageHeadpayMethod: `🫰 <b>Способ оплаты –</b>`,
 
-    IQRMenuLink: "Заказать меню",
-    selectPaymentMethod: "Выберете способ оплаты",
-    cash: "Наличные",
-    bankCard: "Карта",
-    cancelButton: "Отмена",
-    waiterWillCome: "Спасибо! Скоро к вам придет официант.",
-    errorInviteWaiter: "Что-то пошло не так, пожалуйста пригласите официанта",
-    enterCorrectly: "Пожалуйста введите корректно номер стола",
-    errorPayCode: "Неверный код! Пожалуйста уточните у официанта.",
-    finishText: "Спасибо! Ждем Вас вновь!",
-    inputPayCodeText: "Сейчас к вам придет официант. После оплаты пожалуйста введите код оплаты. Официант вам его сообщит.<br>Будем благодарны за чаевые!😊",
-    textMessage: "💵 Оплата заказа!\n\nРодной язык посетителя - ${userLang}\n🍽️ Стол № ${tableNumber}\n💶💳 Способ оплаты - ${paymentMethod}\n#️⃣ Номер закза -\n${orderId}\n\n📃 Вот чек:\n ${orderListText}\n💰 Итого: ${totalCostMessage}\n\n🔢 Код - Успешная оплата: ${sectetPayCode}",
-    textMessageOrderPaid: "💸❌ Заказ оплачен!\n#️⃣ Номер заказа -\n${orderId}\n💰 Итого: ${totalCostMessage}"
+    messageBodyNewOrder: `📃 <b>Список блюд:</b>`,
+    messageBodyAddOrderOldDishes: `🟩 <b>Прошлые блюда:</b>`,
+    messageBodyAddOrderNewDishes: `🟨 <b>Новые блюда:</b>`,
+
+    messageFooterTotalCost: `💰 <b>Стоимость заказа:</b>`,
+    messageFooterTotalCostFinal: `💰 <b>Итого:</b>`,
+
+    // диалоги
+    dialogBoxButtonCancel: 'Отмена',
+    dialogBoxButtonCash: 'Наличные 💵',
+    dialogBoxButtonBankCard: 'Карта 💳',
+    dialogBoxFeedbackLinckText: 'Оставить отзыв',
+
+    dialogBoxLoadSendText: 'Отправка',
+    dialogBoxSendOk: 'Заказ отправлен',
+    dialogBoxSendRequest: 'Заявка отправлена',
+    dialogBoxSendError: 'Ошибка при отправке заказа. Пожалуйста пригласите официанта',
+    dialogBoxTableNumberRequest: 'Пожалуйста введите номер стола',
+
+    dialogBoxSelectPayMethodText: 'Выберите способ оплаты',
+    dialogBoxfinalMessage: `
+🏃‍♂️‍➡️ Сейчас к вам подойдет официант.<br>
+💵 Сумма к оплате – <br><span class='final-cost'>\${orderListTotalCostNumber}</span><br>
+<br>
+Не забудьте про чаевые🤗<br>
+🙏Пожалуйста оставьте отзыв🙏
+    `,
   },
-  
+
   en: {
-    loaderText: 'Loading menu.<br>Please wait.',
-    appError: 'Sorry, the app is temporarily unavailable. Please contact the waitress.',
-    discountButtonText: 'Offer of the day',
-    visitorNnativeLanguage: "Visitor's native language - ",
-    portion: "portion",
-    cost: "cost",
-    pieces: "pieces",
+    flag: `🇺🇸`,
+    // head
+    ogTitle: `Pro version example`,
+    ogDescription: `Premier interactive menu Pro version`,
+    title: `IQRMenu/EN`,
 
-    totalCost: "Total cost of dishes in the cart: <br>",
-    yourOrderTitle: "Your order",
-    sendOrder: "Send order",
-    updateOrder: "Add to order",
+    // body
+    loaderText: `Loading menu...`,
+    orderBoxTotalCostText: `Total cost of <b>order</b>:`,
+    buttonShowOrderList: `View order <span class="span-number" id="orderLengthNumber"></span>`,
+    buttonPayOrder: `Pay order`,
+    cartListTotalCostText: `Total cost of dishes in <b>cart</b>:`,
+    buttonSendOrder: `Send order`,
+    buttonSendAddOrder: `Add to order`,
+    ordersHistoryButtonText: `Order history`,
+    orderCheckTitleText: `Your order:`,
+    orderCheckTotalCostText: `Pay order`,
+    orderHistoryTitleText: `Your past orders`,
 
-    yourCart: "Cart:",
-    basketBoxClue: 'You can pay for your order here <i class="fa-solid fa-turn-down"></i>',
-    announcement: "",
-    announcementText: "Select the desired dishes, then call the waiter and show them the cart.",
-    googleFedback: "Leave feedback",
-    deletePortionMessage: "Delete portion?",
+    categoryButtonDiscountText: 'Offer of the day',
+    menuCardButtonPlay: 'video',
 
-    textSendOrder: "Order sent successfully!",
-    textErrorSendOrder: "Error sending order. Please try again or call the waiter.",
-    textAskTableNumber: "Please enter your table number. You can find it on the QR code located on your table.",
-    totalCostOrder: "Order cost: ",
-    yourOrderButton: "Your order<br>№",
+    // messages
+    messageTitleNewOrder: `🔴 <b>New order!</b>`,
+    messageTitleAddOrder: `🟡 <b>Order update</b>`,
+    messageTitlePay: `🟢 <b>Order payment</b>`,
 
-    tableNumber: "🍽️Table № ",
-    orderNumber: "#️⃣ Order number",
-    newOrderMessage: "‼️🔴 New order!\n",
-    updateOrderMessage: "‼️🟢 Order update\n",
-    oldDishes: "🟨 Previous dishes:",
-    newDishes: "🟩 New dishes:",
-    listDishes: "📃 List of dishes:",
-    payOrderButton: "Pay",
+    messageHeadUserLang: `🗣 <b>Visitor's native language –</b>`,
+    messageHeadUserTableNumber: `🍽️ <b>Table No. –</b>`,
+    messageHeadUserOrderNumber: `#️⃣ <b>Order number ↴</b>`,
+    messageHeadpayMethod: `🫰 <b>Payment method –</b>`,
 
-    IQRMenuLink: "Order menu",
-    selectPaymentMethod: "Choose a payment method",
-    cash: "Cash",
-    bankCard: "Card",
-    cancelButton: "Cancel",
-    waiterWillCome: "Thank you! A waiter will come to you soon.",
-    errorInviteWaiter: "Something went wrong, please call a waiter.",
-    enterCorrectly: "Please enter the table number correctly.",
-    errorPayCode: "Invalid code! Please check with the waiter.",
-    finishText: "Thank you! We look forward to seeing you again!",
-    inputPayCodeText: "The waiter will be with you shortly. After making the payment, please enter the payment code that they will provide.<br>We would appreciate tips!😊",
-    textMessage: "💵 Order payment!\n\nVisitor's native language - ${userLang}\n🍽️ Table № ${tableNumber}\n💶💳 Payment method - ${paymentMethod}\n#️⃣ Order number -\n${orderId}\n\n📃 Here is the receipt:\n ${orderListText}\n💰 Total: ${totalCostMessage}\n\n🔢 Payment Success Code: ${sectetPayCode}",
-    textMessageOrderPaid: "💸❌ Order paid!\n#️⃣ Order number -\n${orderId}\n💰 Total: ${totalCostMessage}",
-  },
+    messageBodyNewOrder: `📃 <b>Dish list:</b>`,
+    messageBodyAddOrderOldDishes: `🟩 <b>Previous dishes:</b>`,
+    messageBodyAddOrderNewDishes: `🟨 <b>New dishes:</b>`,
 
-  tr: {
-    loaderText: 'Menü yükleniyor.<br>Lütfen bekleyin.',
-    appError: 'Üzgünüz, uygulama geçici olarak kullanılamıyor. Lütfen garsonla iletişime geçin.',
-    discountButtonText: 'Günün Teklifi',
-    visitorNnativeLanguage: "Ziyaretçinin ana dili - ",
-    portion: "porsiyon",
-    cost: "fiyat",
-    pieces: "adet",
+    messageFooterTotalCost: `💰 <b>Order cost:</b>`,
+    messageFooterTotalCostFinal: `💰 <b>Total:</b>`,
 
-    totalCost: "Sepetteki yemeklerin toplam maliyeti: <br>",
-    yourOrderTitle: "Siparişiniz",
-    sendOrder: "Siparişi Gönder",
-    updateOrder: "Siparişe Ekle",
+    // dialogs
+    dialogBoxButtonCancel: 'Cancel',
+    dialogBoxButtonCash: 'Cash 💵',
+    dialogBoxButtonBankCard: 'Card 💳',
+    dialogBoxFeedbackLinckText: 'Leave feedback',
 
-    yourCart: "Sepet:",
-    basketBoxClue: 'Siparişinizin ödemesini buradan yapabilirsiniz <i class="fa-solid fa-turn-down"></i>',
-    announcement: "",
-    announcementText: "İstediğiniz yemekleri seçin, ardından garsonu çağırıp sepeti gösterin.",
-    googleFedback: "Geri Bildirim Bırakın",
-    deletePortionMessage: "Porsiyonu silmek istiyor musunuz?",
+    dialogBoxLoadSendText: 'Sending',
+    dialogBoxSendOk: 'Order sent',
+    dialogBoxSendRequest: 'Order request sent',
+    dialogBoxSendError: 'Error sending order. Please call a waiter',
+    dialogBoxTableNumberRequest: 'Please enter table number',
 
-    textSendOrder: "Sipariş başarıyla gönderildi!",
-    textErrorSendOrder: "Sipariş gönderilirken hata oluştu. Lütfen tekrar deneyin veya garsonu çağırın.",
-    textAskTableNumber: "Lütfen masa numaranızı girin. Masa numaranızı masanızdaki QR kodunda bulabilirsiniz.",
-    totalCostOrder: "Sipariş tutarı: ",
-    yourOrderButton: "Siparişiniz<br>№",
-
-    tableNumber: "🍽️ Masa № ",
-    orderNumber: "#️⃣ Sipariş Numarası",
-    newOrderMessage: "‼️🔴 Yeni Sipariş!\n",
-    updateOrderMessage: "‼️🟢 Sipariş Güncellemesi\n",
-    oldDishes: "🟨 Önceki yemekler:",
-    newDishes: "🟩 Yeni yemekler:",
-    listDishes: "📃 Yemek listesi:",
-    payOrderButton: "Öde",
-
-    IQRMenuLink: "Menüyü Sipariş Et",
-    selectPaymentMethod: "Ödeme yöntemi seçin",
-    cash: "Nakit",
-    bankCard: "Kart",
-    cancelButton: "İptal",
-    waiterWillCome: "Teşekkürler! Garson yakında yanınıza gelecek.",
-    errorInviteWaiter: "Bir hata oluştu, lütfen garsonu çağırın.",
-    enterCorrectly: "Lütfen masa numarasını doğru girin.",
-    errorPayCode: "Geçersiz kod! Lütfen garsona danışın.",
-    finishText: "Teşekkür ederiz! Sizi tekrar görmek için sabırsızlanıyoruz!",
-    inputPayCodeText: "Garson kısa süre içinde yanınıza gelecektir. Ödemeyi yaptıktan sonra, size verilen ödeme kodunu giriniz.<br>İpuçlarını memnuniyetle karşılarız!😊",
-    textMessage: "💵 Sipariş Ödemesi!\n\nZiyaretçinin ana dili - ${userLang}\n🍽️ Masa № ${tableNumber}\n💶💳 Ödeme yöntemi - ${paymentMethod}\n#️⃣ Sipariş numarası -\n${orderId}\n\n📃 İşte fişiniz:\n ${orderListText}\n💰 Toplam: ${totalCostMessage}\n\n🔢 Ödeme Başarı Kodu: ${sectetPayCode}",
-    textMessageOrderPaid: "💸❌ Sipariş ödendi\n#️⃣ Sipariş numarası -\n${orderId}\n💰 Toplam: ${totalCostMessage}"
+    dialogBoxSelectPayMethodText: 'Select payment method',
+    dialogBoxfinalMessage: `
+🏃‍♂️‍➡️ A waiter will be with you shortly.<br>
+💵 Amount due – <br><span class='final-cost'>\${orderListTotalCostNumber}</span><br>
+<br>
+Don't forget to tip 🤗<br>
+🙏 Please leave feedback 🙏
+    `,
   },
 
   de: {
-    loaderText: 'Menü wird geladen.<br>Bitte warten.',
-    appError: 'Entschuldigung, die App ist vorübergehend nicht verfügbar. Bitte wenden Sie sich an die Bedienung.',
-    discountButtonText: 'Angebot des Tages',
-    visitorNnativeLanguage: "Muttersprache des Besuchers - ",
-    portion: "Portion",
-    cost: "Kosten",
-    pieces: "Stück",
+    flag: `🇩🇪`,
+    // head
+    ogTitle: `Beispiel Pro-Version`,
+    ogDescription: `Erstklassiges interaktives Menü Pro-Version`,
+    title: `IQRMenu/DE`,
 
-    totalCost: "Gesamtkosten der Gerichte im Warenkorb: <br>",
-    yourOrderTitle: "Ihre Bestellung",
-    sendOrder: "Bestellung senden",
-    updateOrder: "Zur Bestellung hinzufügen",
+    // body
+    loaderText: `Menü wird geladen...`,
+    orderBoxTotalCostText: `Gesamtkosten der <b>Bestellung</b>:`,
+    buttonShowOrderList: `Bestellung anzeigen <span class="span-number" id="orderLengthNumber"></span>`,
+    buttonPayOrder: `Bestellung bezahlen`,
+    cartListTotalCostText: `Gesamtkosten der Gerichte im <b>Warenkorb</b>:`,
+    buttonSendOrder: `Bestellung senden`,
+    buttonSendAddOrder: `Zur Bestellung hinzufügen`,
+    ordersHistoryButtonText: `Bestellverlauf`,
+    orderCheckTitleText: `Ihre Bestellung:`,
+    orderCheckTotalCostText: `Bestellung bezahlen`,
+    orderHistoryTitleText: `Ihre vergangenen Bestellungen`,
 
-    yourCart: "Warenkorb:",
-    basketBoxClue: 'Hier können Sie Ihre Bestellung bezahlen <i class="fa-solid fa-turn-down"></i>',
-    announcement: "",
-    announcementText: "Wählen Sie die gewünschten Gerichte aus, rufen Sie dann die Bedienung und zeigen Sie den Warenkorb.",
-    googleFedback: "Feedback hinterlassen",
-    deletePortionMessage: "Portion löschen?",
+    categoryButtonDiscountText: 'Tagesangebot',
+    menuCardButtonPlay: 'Video',
 
-    textSendOrder: "Bestellung erfolgreich gesendet!",
-    textErrorSendOrder: "Fehler beim Senden der Bestellung. Bitte versuchen Sie es erneut oder rufen Sie die Bedienung.",
-    textAskTableNumber: "Bitte geben Sie Ihre Tischnummer ein. Sie finden sie auf dem QR-Code an Ihrem Tisch.",
-    totalCostOrder: "Bestellkosten: ",
-    yourOrderButton: "Ihre Bestellung<br>Nr.",
+    // Nachrichten
+    messageTitleNewOrder: `🔴 <b>Neue Bestellung!</b>`,
+    messageTitleAddOrder: `🟡 <b>Bestell-Update</b>`,
+    messageTitlePay: `🟢 <b>Bestellzahlung</b>`,
 
-    tableNumber: "🍽️ Tisch Nr. ",
-    orderNumber: "#️⃣ Bestellnummer",
-    newOrderMessage: "‼️🔴 Neue Bestellung!\n",
-    updateOrderMessage: "‼️🟢 Bestellaktualisierung\n",
-    oldDishes: "🟨 Vorherige Gerichte:",
-    newDishes: "🟩 Neue Gerichte:",
-    listDishes: "📃 Speisekarte:",
-    payOrderButton: "Bezahlen",
+    messageHeadUserLang: `🗣 <b>Muttersprache des Besuchers –</b>`,
+    messageHeadUserTableNumber: `🍽️ <b>Tisch Nr. –</b>`,
+    messageHeadUserOrderNumber: `#️⃣ <b>Bestellnummer ↴</b>`,
+    messageHeadpayMethod: `🫰 <b>Bezahlmethode –</b>`,
 
-    IQRMenuLink: "Menü bestellen",
-    selectPaymentMethod: "Zahlungsmethode wählen",
-    cash: "Barzahlung",
-    bankCard: "Karte",
-    cancelButton: "Abbrechen",
-    waiterWillCome: "Danke! Die Bedienung kommt gleich zu Ihnen.",
-    errorInviteWaiter: "Etwas ist schiefgelaufen, bitte rufen Sie die Bedienung.",
-    enterCorrectly: "Bitte geben Sie die Tischnummer korrekt ein.",
-    errorPayCode: "Ungültiger Code! Bitte fragen Sie die Bedienung.",
-    finishText: "Vielen Dank! Wir freuen uns auf Ihren nächsten Besuch!",
-    inputPayCodeText: "Die Bedienung wird in Kürze bei Ihnen sein. Nach der Zahlung geben Sie bitte den Zahlungs-Code ein, den Sie erhalten haben.<br>Wir freuen uns über Tipps!😊",
-    textMessage: "💵 Bestellzahlung!\n\nMuttersprache des Besuchers - ${userLang}\n🍽️ Tisch Nr. ${tableNumber}\n💶💳 Zahlungsmethode - ${paymentMethod}\n#️⃣ Bestellnummer -\n${orderId}\n\n📃 Hier ist Ihre Quittung:\n ${orderListText}\n💰 Gesamt: ${totalCostMessage} ${currencySymbol}\n\n🔢 Zahlungserfolgs-Code: ${sectetPayCode}",
-    textMessageOrderPaid: "💸❌ Bestellung bezahlt!\n#️⃣ Bestellnummer -\n${orderId}\n💰 Gesamt: ${totalCostMessage}"
+    messageBodyNewOrder: `📃 <b>Gerichtsliste:</b>`,
+    messageBodyAddOrderOldDishes: `🟩 <b>Frühere Gerichte:</b>`,
+    messageBodyAddOrderNewDishes: `🟨 <b>Neue Gerichte:</b>`,
 
+    messageFooterTotalCost: `💰 <b>Bestellkosten:</b>`,
+    messageFooterTotalCostFinal: `💰 <b>Gesamt:</b>`,
+
+    // Dialoge
+    dialogBoxButtonCancel: 'Abbrechen',
+    dialogBoxButtonCash: 'Barzahlung 💵',
+    dialogBoxButtonBankCard: 'Karte 💳',
+    dialogBoxFeedbackLinckText: 'Feedback hinterlassen',
+
+    dialogBoxLoadSendText: 'Senden',
+    dialogBoxSendOk: 'Bestellung gesendet',
+    dialogBoxSendRequest: 'Bestellanfrage gesendet',
+    dialogBoxSendError: 'Fehler beim Senden der Bestellung. Bitte rufen Sie einen Kellner',
+    dialogBoxTableNumberRequest: 'Bitte geben Sie die Tischnummer ein',
+
+    dialogBoxSelectPayMethodText: 'Zahlungsmethode auswählen',
+    dialogBoxfinalMessage: `
+🏃‍♂️‍➡️ Ein Kellner wird gleich bei Ihnen sein.<br>
+💵 Fälliger Betrag – <br><span class='final-cost'>\${orderListTotalCostNumber}</span><br>
+<br>
+Vergessen Sie nicht zu Trinkgeld 🤗<br>
+🙏 Bitte hinterlassen Sie Feedback 🙏
+    `,
   },
 
-}
+  tr: {
+    flag: `🇹🇷`,
+    // head
+    ogTitle: `Pro sürüm örneği`,
+    ogDescription: `Önde gelen etkileşimli menü Pro sürümü`,
+    title: `IQRMenu/TR`,
+
+    // body
+    loaderText: `Menü yükleniyor...`,
+    orderBoxTotalCostText: `<b>Sipariş</b> toplam maliyeti:`,
+    buttonShowOrderList: `Siparişi görüntüle <span class="span-number" id="orderLengthNumber"></span>`,
+    buttonPayOrder: `Siparişi öde`,
+    cartListTotalCostText: `<b>Sepet</b> içindeki yemeklerin toplam maliyeti:`,
+    buttonSendOrder: `Siparişi gönder`,
+    buttonSendAddOrder: `Siparişe ekle`,
+    ordersHistoryButtonText: `Sipariş geçmişi`,
+    orderCheckTitleText: `Siparişiniz:`,
+    orderCheckTotalCostText: `Siparişi öde`,
+    orderHistoryTitleText: `Geçmiş siparişleriniz`,
+
+    categoryButtonDiscountText: 'Günün teklifi',
+    menuCardButtonPlay: 'video',
+
+    // mesajlar
+    messageTitleNewOrder: `🔴 <b>Yeni sipariş!</b>`,
+    messageTitleAddOrder: `🟡 <b>Sipariş güncellemesi</b>`,
+    messageTitlePay: `🟢 <b>Sipariş ödemesi</b>`,
+
+    messageHeadUserLang: `🗣 <b>Ziyaretçinin ana dili –</b>`,
+    messageHeadUserTableNumber: `🍽️ <b>Masa no –</b>`,
+    messageHeadUserOrderNumber: `#️⃣ <b>Sipariş numarası ↴</b>`,
+    messageHeadpayMethod: `🫰 <b>Ödeme yöntemi –</b>`,
+
+    messageBodyNewOrder: `📃 <b>Yemek listesi:</b>`,
+    messageBodyAddOrderOldDishes: `🟩 <b>Önceki yemekler:</b>`,
+    messageBodyAddOrderNewDishes: `🟨 <b>Yeni yemekler:</b>`,
+
+    messageFooterTotalCost: `💰 <b>Sipariş maliyeti:</b>`,
+    messageFooterTotalCostFinal: `💰 <b>Toplam:</b>`,
+
+    // Diyaloglar
+    dialogBoxButtonCancel: 'İptal',
+    dialogBoxButtonCash: 'Nakit 💵',
+    dialogBoxButtonBankCard: 'Kartla 💳',
+    dialogBoxFeedbackLinckText: 'Geri bildirim bırak',
+
+    dialogBoxLoadSendText: 'Gönderiliyor',
+    dialogBoxSendOk: 'Sipariş gönderildi',
+    dialogBoxSendRequest: 'Sipariş isteği gönderildi',
+    dialogBoxSendError: 'Sipariş gönderilirken hata oluştu. Lütfen garsonu çağırın',
+    dialogBoxTableNumberRequest: 'Lütfen masa numarasını giriniz',
+
+    dialogBoxSelectPayMethodText: 'Ödeme yöntemini seçin',
+    dialogBoxfinalMessage: `
+🏃‍♂️‍➡️ Garson yakında yanınızda olacak.<br>
+💵 Ödenecek tutar – <br><span class='final-cost'>\${orderListTotalCostNumber}</span><br>
+<br>
+Bahşiş vermeyi unutmayın 🤗<br>
+🙏 Lütfen geri bildirim bırakın 🙏
+    `,
+  },
+};
