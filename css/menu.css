@@ -23,22 +23,6 @@ body {
   font-size: 18px;
 }
 
-.loader img {
-  width: 100px;
-  animation: loader 1s infinite alternate-reverse ease-in-out;
-}
-
-@keyframes loader {
-  0% {
-    transform: scale(100%);
-
-  }
-
-  100% {
-    transform: scale(110%);
-  }
-}
-
 .loader_hide {
   opacity: 0;
   visibility: hidden;
@@ -144,14 +128,14 @@ button.cart_active {
 
 @keyframes pulse-wave {
   0% {
-    outline: 1px solid var(--color1);
-    outline-offset: 0;
+    /* outline: 1px solid var(--color1); */
+    /* outline-offset: 0; */
     background-color: var(--color2);
   }
 
   100% {
-    outline: 2px solid #ffffff00;
-    outline-offset: 16px;
+    /* outline: 2px solid #ffffff00; */
+    /* outline-offset: 16px; */
     background-color: var(--color3);
   }
 }
